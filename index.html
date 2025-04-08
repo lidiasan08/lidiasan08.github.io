@@ -1,1 +1,138 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #f8a5c2;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9d4e4;
+            border-radius: 8px;
+            border: 1px solid #f5b5c0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #d84d8b;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .info div {
+            flex: 1;
+            padding: 10px;
+            margin: 0 5px;
+            background-color: #fbd9e2;
+            border-radius: 6px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 5px solid #f56e6a;
+        }
+
+        @media screen and (max-width: 600px) {
+            .info {
+                flex-direction: column;
+            }
+
+            .profile-pic {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Currículum</h1>
+    </header>
+
+    <section>
+        <div style="text-align: center;">
+            <img class="profile-pic" src="profilephoto.jpeg" alt="Foto de perfil">
+        </div>
+    </section>
+
+    <section>
+        <h2>Datos Personales</h2>
+        <div class="info">
+            <div>
+                <h3>Nombre</h3>
+                <p>Lidia Santos</p>
+            </div>
+            <div>
+                <h3>Correo Electrónico</h3>
+                <p>lidiasantos@gmail.com</p>
+            </div>
+            <div>
+                <h3>Teléfono</h3>
+                <p>(123) 333-0629</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiencia Laboral</h2>
+        <div>
+            <h3>Desarrollador Web</h3>
+            <p>Empresa Microsoft - Toronto, Canada |  Noviembre 2028 - Enero 2032</p>
+            <ul>
+                <li>Brinde soporte tecnico a clientes corporativos en temas relacionados con la nube (Azure),
+                    herramineta de productividad (Nicrosft 365)  seguridad.
+                </li>
+                <li>Participe en el programa "WOmen at Microsoft" promoviendo la inclusion
+                    y liderazgo femenino en tecnologia
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Otro Trabajo</h3>
+            <p>Google - MOuntain View, CA, Estados UNidos | Marzo 2032 - Enero 2034</p>
+            <ul>
+                <li>Disene, desarrolle y mantuve aplicaciones escalables utilizando lenguajes como 
+                    Python y C++. </li>
+                <li>COntribui en la integracion de soluciones basadas en inteligencia artificial para 
+                    automatizar tareas rutinarias y mejorar la toma de decisiones. 
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Educación</h2>
+        <div>
+            <h3>Tecnico en desarrollo de software</h3>
+            <p>Universidad Galileo - Ciudad de GUatemala, Guatemala | Enero 2025 - Diciembre 2026</p>
+            <p>Desarrollo Web y Movil</p>
+        </div>
+    </section>
+</body>
+</html>
